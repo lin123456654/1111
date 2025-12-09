@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF展示</title>
+    <style>
+        /* 全局重置，去掉所有默认边距 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* 页面居中展示GIF，占满可视区域但不溢出 */
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-startr;
+            background-color: #ffffff; /* 背景白色，可改成#f5f5f5浅灰 */
+        }
+        /* GIF自适应，最大占满屏幕，不变形 */
+        img {
+            max-width: 100%;
+            max-height: 100vh;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <!-- 只改这行引号里的内容，替换成你的GIF路径/链接 -->
+    <img src="https://pic1.imgdb.cn/item/6937984a2a4ee13cb952d09b.gif" alt="GIF">
+</body>
+
+</html>
